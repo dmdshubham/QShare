@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+
+    <include
+        layout="@layout/app_bar_faculty_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:layout_gravity="start"
+        android:layout_width="250dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="match_parent">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/slide_profile_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/icn_faculty"
+            app:civ_border_color="#EEEEEE"
+            app:civ_border_width="2dp"
+            android:foregroundGravity="center_horizontal"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="10"
+            android:layout_centerHorizontal="true"
+            app:civ_shadow_color="#8BC34A"/>
+
+        <TextView
+            android:id="@+id/slide_profile_name"
+            android:layout_below="@+id/slide_profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="5dp"
+            android:text="Name"/>
+        <TextView
+            android:id="@+id/slide_profile_email"
+            android:layout_below="@+id/slide_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="5dp"
+            android:text="Email@host.com"/>
+
+        <Button
+            android:layout_below="@+id/slide_profile_image"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:text="edit"
+            android:onClick="onEdit"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/slide_line"
+            android:layout_below="@+id/slide_profile_email"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#afff"/>
+
+        <ScrollView
+            android:layout_below="@+id/slide_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:textColor="@android:color/white"
+                    android:text="Home"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="10dp"
+                    android:gravity="left|center_vertical"
+                    android:drawablePadding="10dp"
+                    android:textAllCaps="false"
+                    android:onClick="onHome"
+                    android:drawableLeft="@drawable/menu_home"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:textColor="@android:color/white"
+                    android:text="CCEAMS"
+                    android:onClick="onCCEAMS"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="10dp"
+                    android:textAllCaps="false"
+                    android:gravity="left|center_vertical"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/menu_schedule"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:textColor="@android:color/white"
+                    android:text="Give Answer"
+                    android:onClick="onNotify"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="10dp"
+                    android:textAllCaps="false"
+                    android:gravity="left|center_vertical"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/menu_notify"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:textColor="@android:color/white"
+                    android:text="Upload Study Material"
+                    android:onClick="onUpload"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="10dp"
+                    android:textAllCaps="false"
+                    android:gravity="left|center_vertical"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/menu_upload"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:textColor="@android:color/white"
+                    android:text="Settings"
+                    android:onClick="onSetting"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="10dp"
+                    android:textAllCaps="false"
+                    android:gravity="left|center_vertical"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/menu_setting"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:onClick="onLogout"
+                    android:textColor="@android:color/white"
+                    android:text="Logout"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="10dp"
+                    android:textAllCaps="false"
+                    android:gravity="left|center_vertical"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/menu_logout"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_std_show_ans"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.karunendu.qshare.StdShowAns"
+    tools:showIn="@layout/activity_std_show_ans">
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/text_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:text="Text"
+            android:onClick="onText"
+            android:layout_height="36dp" />
+        <Button
+            android:id="@+id/file_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
+            android:text="File"
+            android:onClick="onFile"
+            android:layout_height="36dp" />
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/text_container"
+        android:layout_below="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/file_container"
+        android:layout_below="@+id/topbar"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/image1"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <WebView
+            android:id="@+id/pdfView1"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:id="@+id/progressBar" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.karunendu.qshare.StudentPanelActivity"
+    tools:showIn="@layout/app_bar_student_panel">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#8BC34A"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/std_profile_image"
+                android:layout_width="130dp"
+                android:layout_height="115dp"
+                android:src="@drawable/icn_student"
+                app:civ_border_color="#EEEEEE"
+                app:civ_border_width="2dp"
+                android:foregroundGravity="center_horizontal"
+                app:civ_shadow="true"
+                android:clickable="true"
+                android:onClick="onProfileClick"
+
+                android:layout_centerHorizontal="true"
+                app:civ_shadow_color="#8BC34A"/>
+            <TextView
+                android:id="@+id/std_name"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/white"
+
+                android:text="aABC"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#9C27B0"
+            android:clickable="true"
+            android:onClick="onFacCorner"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/icn_faculty"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:text="Faculty Corner"
+                android:layout_marginTop="10dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#03A9F4"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/icn_chatting"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:text="Faculty Chat"
+                android:layout_marginTop="10dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#FF9800"
+            android:clickable="true"
+            android:onClick="onAskQuestion"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/icn_post_question"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:text="Ask Question"
+                android:layout_marginTop="10dp"
+
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#CDDC39"
+            android:clickable="true"
+            android:onClick="onAnswer"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/icn_post_answer"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:text="Get Answer"
+                android:layout_marginTop="10dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+   </LinearLayout>

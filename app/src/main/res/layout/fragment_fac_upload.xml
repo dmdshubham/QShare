@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <com.malmstein.floatinghints.FloatingHintEditTextLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp">
+           <EditText
+               android:id="@+id/share_title"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Enter Title"
+              android:inputType="text"
+               />
+       </com.malmstein.floatinghints.FloatingHintEditTextLayout>
+
+       <com.malmstein.floatinghints.FloatingHintEditTextLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp">
+           <EditText
+              android:id="@+id/share_subject"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Enter Subject"
+               android:inputType="text"
+               />
+       </com.malmstein.floatinghints.FloatingHintEditTextLayout>
+
+        <com.malmstein.floatinghints.FloatingHintEditTextLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <EditText
+                android:id="@+id/share_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Text"
+                android:maxLines="6"
+                android:inputType="text"
+                />
+        </com.malmstein.floatinghints.FloatingHintEditTextLayout>
+
+        <Button
+            android:id="@+id/attache_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Your File"/>
+
+        <TextView
+            android:text="Choose Course"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/spinnerCourse"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:spinnerMode="dropdown"
+            android:layout_height="wrap_content"></Spinner>
+
+        <TextView
+            android:text="Choose Semester"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/spinnerSem"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:spinnerMode="dropdown"
+            android:layout_height="wrap_content"></Spinner>
+
+        <Button
+            android:id="@+id/share"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:text="Share Material"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"/>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

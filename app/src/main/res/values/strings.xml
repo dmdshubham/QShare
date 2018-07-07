@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">QShare</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+    <string name="title_activity_login_reg">LoginRegActivity</string>
+    <string name="title_activity_user_type">UserTypeActivity</string>
+
+
+    <string name="for_student">Student</string>
+    <string name="for_faculty">Faculty</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_ca">Create Account</string>
+    <string name="btn_fp">Forgot password?</string>
+    <string name="btn_back_to_login">Back to login</string>
+    <string-array name="designation">
+        <item>Professor</item>
+        <item>Asst. Professor</item>
+        <item>Co-Ordinator</item>
+        <item>Lab Assitant</item>
+    </string-array>
+    <string-array name="department">
+        <item>CE</item>
+        <item>ME</item>
+        <item>CS</item>
+        <item>IT</item>
+        <item>EC</item>
+        <item>EN</item>
+        <item>EE</item>
+
+    </string-array>
+    <string-array name="sem_array">
+        <item>Sem1</item>
+        <item>Sem2</item>
+        <item>Sem3</item>
+        <item>Sem4</item>
+        <item>Sem5</item>
+        <item>Sem6</item>
+        <item>Sem7</item>
+        <item>Sem8</item>
+    </string-array>
+    <string-array name="place_array">
+        <item>Place1</item>
+        <item>Place2</item>
+        <item>Place3</item>
+        <item>Place4</item>
+        <item>Place5</item>
+        <item>Place6</item>
+        <item>Place7</item>
+        <item>Place8</item>
+    </string-array>
+    <string name="title_activity_faculty_panel">FacultyPanelActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_student_panel">StudentPanelActivity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_faculty_corner">FacultyCornerActivity</string>
+    <string name="title_activity_faculty_corner_details">FacultyCornerDetailsActivity</string>
+    <string name="title_activity_std_ask_question">std_ask_questionActivity</string>
+
+    <string name="daidalos_hello">Hello World!</string>
+    <string name="daidalos_app_name">aFileDialog</string>
+    <color name="daidalos_gray">#888</color>
+    <string name="daidalos_select">Select</string>
+    <string name="daidalos_cancel">Cancel</string>
+    <string name="daidalos_ok">OK</string>
+    <string name="daidalos_new_file">New</string>
+    <string name="daidalos_create_file">Create file</string>
+    <string name="daidalos_create_folder">Create folder</string>
+    <string name="daidalos_accept">Accept</string>
+    <string name="daidalos_enter_file_name">Enter the name of the file that you want to create</string>
+    <string name="daidalos_enter_folder_name">Enter the name of the folder that you want to create</string>
+    <string name="daidalos_yes">Yes</string>
+    <string name="daidalos_no">No</string>
+    <string name="daidalos_confirm_select_file">Are you sure that you want to select the file \'$file_name\'?</string>
+    <string name="daidalos_confirm_create_file">The file \'$file_name\' do not exists, are you sure that you want to create it?</string>
+    <string name="daidalos_confirm_select_folder">Are you sure that you want to select the folder \'$file_name\'?</string>
+    <string name="daidalos_confirm_create_folder">The folder \'$file_name\' do not exists, are you sure that you want to create it?</string>
+    <color name="daidalos_backgroud">#000</color>
+    <color name="daidalos_active_file">#fff</color>
+    <color name="daidalos_inactive_file">#888</color>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_std__answer">Std_Answer</string>
+    <string name="title_activity_std_post_answer">StdPostAnswerActivity</string>
+    <string name="title_activity_student_post_answer">StudentPostAnswer</string>
+
+
+    <string name="course_prompt">Select Course</string>
+    <string name="semester_prompt">Select Semester</string>
+    <string-array name="Course_Name">
+        <item>Select Course</item>
+        <item>MCA</item>
+        <item>BCA</item>
+        <item>PGDCA</item>
+    </string-array>
+    <string-array name="Semester">
+        <item>Select Semester</item>
+        <item>I</item>
+        <item>II</item>
+        <item>III</item>
+        <item>IV</item>
+        <item>V</item>
+        <item>VI</item>
+    </string-array>
+    <string name="FCM_PREF">com.karunendu.qshare.fcm_pref </string>
+    <string name="FCM_TOKEN">com.karunendu.qshare.fcm_token </string>
+    <string name="title_activity_show_answer">ShowAnswerActivity</string>
+    <string name="title_activity_std_show_ans">StdShowAns</string>
+
+</resources>

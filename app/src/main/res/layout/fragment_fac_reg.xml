@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/icn_faculty"
+            app:civ_border_color="#EEEEEE"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="10"
+            android:layout_gravity="center_horizontal"
+            app:civ_shadow_color="#8BC34A"/>
+
+        <com.malmstein.floatinghints.FloatingHintEditTextLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content">
+            <EditText
+
+                android:id="@+id/float_ca_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your name"
+                android:inputType="textPersonName" />
+
+        </com.malmstein.floatinghints.FloatingHintEditTextLayout>
+
+        <com.malmstein.floatinghints.FloatingHintEditTextLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content">
+            <EditText
+
+                android:id="@+id/float_ca_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress" />
+
+        </com.malmstein.floatinghints.FloatingHintEditTextLayout>
+        <com.malmstein.floatinghints.FloatingHintEditTextLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content">
+            <EditText
+
+                android:id="@+id/float_ca_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your phone"
+                android:inputType="phone" />
+
+        </com.malmstein.floatinghints.FloatingHintEditTextLayout>
+
+        <com.malmstein.floatinghints.FloatingHintEditTextLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+
+                android:id="@+id/float_login_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your password"
+                android:inputType="textPassword"
+                android:visibility="invisible"/>
+
+        </com.malmstein.floatinghints.FloatingHintEditTextLayout>
+
+       <TextView
+           android:text="Choose Department"
+           android:textSize="14sp"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/spinnerDepartment"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:spinnerMode="dropdown"
+                android:layout_height="wrap_content"></Spinner>
+        <TextView
+            android:text="Choose Designation"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/spinnerDSG"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:spinnerMode="dropdown"
+                android:layout_height="wrap_content"></Spinner>
+        <Button
+            android:id="@+id/btn_ca"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:text="@string/btn_ca"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"/>
+
+
+        </LinearLayout>
+</ScrollView>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_student_post_answer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.karunendu.qshare.StudentPostAnswer"
+    tools:showIn="@layout/activity_student_post_answer">
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:maxLines="3"
+        android:background="@color/colorAccent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        />
+    <Button
+        android:id="@+id/post_answer"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/action_bar"
+        android:text="Post your Answer"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        />
+    <Button
+        android:id="@+id/button_attach_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attach File"
+        android:background="#443F51B5"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_above="@+id/post_answer"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+
+        />
+    <EditText
+        android:id="@+id/answer"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@+id/button_attach_file"
+        android:layout_below="@id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#443F51B5"
+        android:gravity="start"
+        android:padding="5dp"
+
+
+        />
+
+
+
+
+</RelativeLayout>

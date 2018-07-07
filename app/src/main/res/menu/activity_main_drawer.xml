@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Login_nav"
+            android:icon="@drawable/login"
+
+            android:title="Login" />
+        <item
+            android:id="@+id/nav_Home"
+            android:icon="@drawable/ic_main_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_AboutUs"
+            android:icon="@drawable/aboutus"
+
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_Course"
+            android:icon="@drawable/ic_syllabus"
+            android:title="Course Outline" />
+        <item
+            android:id="@+id/nav_Holiday"
+            android:icon="@drawable/holidaylist"
+            android:title="Holiday List" />
+        <item
+            android:id="@+id/nav_Exam"
+            android:icon="@drawable/timetable"
+            android:title="Exam Time Table" />
+        <item
+            android:id="@+id/nav_Attendance"
+            android:icon="@drawable/attendance"
+            android:title="Centre Wise Attendance" />
+        <item
+            android:id="@+id/nav_Society"
+            android:icon="@drawable/societies"
+            android:title="Societies at Centre" />
+
+        <item
+                android:id="@+id/nav_training"
+                android:icon="@drawable/placement"
+                android:title="Training and Placement" />
+        <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/contactus"
+                android:title="Contact Us" />
+        <item
+            android:id="@+id/nav_magazine"
+            android:icon="@drawable/images"
+            android:title="Magazine" />
+
+    </group>
+
+</menu>

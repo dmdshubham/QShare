@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body style="background-color:#34495e;">
+
+<h3  class="w3-center"><font color="white">इलाहाबाद विश्वविद्यालय <br> University of Allahabad<br>Central University </font></h3>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="url.jpg" style="width:100%">
+  <img class="mySlides" src="1.jpeg" style="width:100%">
+  <img class="mySlides" src="2.jpeg" style="width:100%">
+<img class="mySlides" src="3.jpeg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div style="color:#424949;padding:20px";  align="justify" ><font color="white">
+  <h4>About Us</h4>
+  <p>University of Allahabad has always occupied an esteemed place among the Universities of India for over more than one hundred and twenty-five years. Established on 23rd September 1887, it is the fourth oldest university in India after Calcutta, Bombay and Madras universities. The University of Allahbad earned back its central status with effect from 14th July 2005. Today it comprises of four faculties viz., Arts, Science, Commerce and Law and has about 55,000 students on its roll. The University of Allahabad is mainly a teaching institution that awards undergraduate, post-graduate and research degrees. It also conducts diploma, certificate and correspondence courses in some disciplines. The University has its own campus-wide network and has launched e-learning programs in various disciplines. The University is now poised for exploring new dimensions of institutional accomplishment, by renovating its academic system, reinforcing and augmenting its teaching, research and residential facilities and pursuing social purposes in a coordinated manner, to keep pace with international standards in these areas and endow human resource with the capabilities to serve the nation in the special context of the challenges and imperatives of globalization.
+</p>
+</font>
+</div>
+</body>
+</html>

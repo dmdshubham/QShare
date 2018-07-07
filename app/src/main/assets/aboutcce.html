@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:text-align="http://www.w3.org/1999/xhtml">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body style="background-color:#34495e;">
+
+<h3  class="w3-center"><font color="white"> Institute of Professional Studies<br>
+    University of Allahabad </font></h3>
+
+<div class="w3-content w3-section" style="max-width:500px">
+    <img class="mySlides" src="Building.jpg" style="width:100%">
+    <img class="mySlides" src="CCE Library.jpg" style="width:100%">
+    <img class="mySlides" src="Liabrary.jpg" style="width:100%">
+    <img class="mySlides" src="E Learning.jpg" style="width:100%">
+    <img class="mySlides" src="GTT 01.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div style="color:#424949  ;padding:20px" ;  align="justify"><font color="white">
+    <p>The Institute of Professional Studies was set up in May 2000 by the Executive Council of the University of Allahabad under Section 44 of the Act.
+        It is an institute established and maintained by the University. The basic objective is to develop linkages between the 'world of learning' and the 'world of work' through professional courses.
+        The Institute of Professional Studies (IPS) has been created to provide short, medium and long-term professional courses on a regular and self-financing basis under the aegis of Centres dedicated to specific areas. Presently the Institute has Four centres:
+        <ul >
+        <li>Centre of Computer Education & Training</li>
+        <li>Centre of Food Technology</li>
+        <li>Centre of Fashion Design & Technology</li>
+        <li>Centre of Media Studies</li>
+        </ul>
+    </p>
+    <br>
+    <br>
+    <h4>About Center of Computer Education</h4>
+    <p>The Centre of Computer Education (CCE) was established under Institute of Professional Studies, University of Allahabad in December 2000. It is an institute established and maintained by the University. The institute is located in the Science Faculty (formerly known as Muir Central College) Campus of the University of Allahabad. The basic objective is to strengthen the linkages between the 'world of learning' and the 'world of work' through professional courses. The centre offers BCA and MCA courses & D.Phil. in the areas of Computer Science and Computer Applications.
+    </p>
+</font>
+</div>
+</body>
+</html>

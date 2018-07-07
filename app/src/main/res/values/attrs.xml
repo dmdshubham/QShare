@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <declare-styleable name="FloatingHintEditTextLayout">
+    <attr name="floatingHintTextAppearance" format="reference" />
+    <attr name="floatingHintSidePadding" format="reference|dimension" />
+    <attr name="floatingHintInAnimation" format="reference" />
+    <attr name="floatingHintOutAnimation" format="reference" />
+  </declare-styleable>
+
+  <style name="AppTheme.BottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+    <item name="bottomSheetStyle">@style/AppTheme.BottomSheetStyle</item>
+  </style>
+
+  <style name="AppTheme.BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+    <item name="behavior_hideable">true</item>
+    <item name="behavior_skipCollapsed">true</item>
+  </style>
+
+</resources>

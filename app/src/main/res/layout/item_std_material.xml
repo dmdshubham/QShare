@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/icn_circle_logo"/>
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/icn_pdf"/>
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="abc"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@+id/item_image"
+            />
+        <TextView
+            android:id="@+id/item_subject"
+            android:layout_below="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#9C27B0"
+            android:text="Title"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@+id/item_image"
+            />
+        <ImageView
+            android:id="@+id/item_expand"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icn_drop_down"
+            android:layout_centerVertical="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"
+        android:background="#E1BEE7"/>
+
+    <LinearLayout
+        android:id="@+id/item_fac"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="#E1BEE7"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#9C27B0"
+            android:text="Title"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/icn_name"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@+id/item_image"
+            />
+        <TextView
+            android:id="@+id/item_email"
+            android:layout_below="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#9C27B0"
+            android:text="Title"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/icn_email"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@+id/item_image"
+            />
+        <TextView
+            android:id="@+id/item_phone"
+            android:layout_below="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#9C27B0"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/icn_phone"
+            android:text="Title"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@+id/item_image"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
